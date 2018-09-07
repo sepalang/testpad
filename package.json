@@ -1,0 +1,35 @@
+{
+  "name": "@sepalang/testpad",
+  "version": "0.0.1",
+  "description": "Interactive test cli",
+  "main": "index.js",
+  "bin": {
+    "testpad": "bin/testpad.js"
+  },
+  "scripts": {
+    "test:test-basic": "my testpad test/run-script/src",
+    "test:test-verbose": "my testpad test/run-script/src --verbose",
+    "test": "npm run test:test-basic && npm run test:test-verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sepalang/testpad.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "AHN HO JUNG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sepalang/testpad/issues"
+  },
+  "homepage": "https://github.com/sepalang/testpad#readme",
+  "dependencies": {
+    "@sepalang/myself": "^0.3.0",
+    "@sepalang/padoc": "^0.9.2",
+    "@sepalang/runner": "^0.8.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "jest": "^23.5.0"
+  }
+}
