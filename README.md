@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/sepalang/testpad/tree/master.svg?style=shield)](https://circleci.com/gh/sepalang/testpad/tree/master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/sepalang/testpad.svg)](https://greenkeeper.io/)
 
 # testpad
 Interactive test cli
