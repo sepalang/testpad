@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/testpad",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Interactive test cli",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,8 @@
   "scripts": {
     "test:test-basic": "my testpad test/run-script/src",
     "test:test-verbose": "my testpad test/run-script/src --verbose",
-    "test": "npm run test:test-basic && npm run test:test-verbose"
+    "test:multi": "my testpad 'test/multi/one test/multi/two'",
+    "test": "npm run test:test-basic && npm run test:test-verbose && npm run test:multi"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,7 @@
     "@sepalang/padoc": "^0.9.4",
     "@sepalang/runner": "^0.8.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.4.2",
-    "jest": "^23.5.0"
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0"
   }
 }

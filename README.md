@@ -9,6 +9,14 @@ spec.js 나 test.js로 파일 이름이 끝나는 파일을 jest를 이용하여
 ```
 testpad sample/src
 
+### Multi path
+```
+testpad 'test/multi/one test/multi/two'
+#or
+testpad 'test/multi/one, test/multi/two'
+```
+
+
 #verbose
 testpad sample/src --verbose
 ```

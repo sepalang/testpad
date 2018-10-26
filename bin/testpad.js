@@ -1,13 +1,23 @@
 #!/usr/bin/env node
-const { args:argvProps } = require('@sepalang/myself')
+const { args:argv } = require('@sepalang/myself')
 const { esTest } = require('../lib/execUtil')
+const path = require('path')
+const cwd  = process.cwd()
 
-const argv = {
-  input     : argvProps['_'][0],
-  verbose   : !!argvProps.verbose
+const testOptions = {
+  verbose : !!argv.verbose,
+  files   : undefined
 }
 
-esTest(argv)
+if(argv._ && argv._ instanceof Array && argv._.length){
+  testOptions.files = argv._[0].trim().split(/[\,\s]+/)
+}
+
+testOptions.files = testOptions.files.map(input=>{
+  return input.indexOf("/") === 0 ? input : path.resolve(cwd, input)
+})
+
+esTest(testOptions)
 .catch(e=>{
   console.log(`Padoc --test fail!`,e)
   process.exit(1)
