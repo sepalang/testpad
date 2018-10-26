@@ -18,32 +18,44 @@ jobs:
           paths:
             - runner
 
-  test-test-basic:
+  test-basic:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/project
       - run:
           name: TEST
-          command: npm run test:test-basic
+          command: npm run test:basic
 
-  test-test-verbose:
+  test-verbose:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/project
       - run:
           name: TEST
-          command: npm run test:test-verbose
+          command: npm run test:verbose
+  
+  test-multi:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: TEST
+          command: npm run test:multi
 
 workflows:
   version: 2
   task:
     jobs:
       - initialize
-      - test-test-basic:
+      - test-basic:
           requires:
             - initialize
-      - test-test-verbose:
+      - test-verbose:
+          requires:
+            - initialize
+      - test-multi:
           requires:
             - initialize

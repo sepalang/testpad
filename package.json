@@ -7,8 +7,8 @@
     "testpad": "bin/testpad.js"
   },
   "scripts": {
-    "test:test-basic": "my testpad test/run-script/src",
-    "test:test-verbose": "my testpad test/run-script/src --verbose",
+    "test:basic": "my testpad test/run-script/src",
+    "test:verbose": "my testpad test/run-script/src --verbose",
     "test:multi": "my testpad 'test/multi/one test/multi/two'",
     "test": "npm run test:test-basic && npm run test:test-verbose && npm run test:multi"
   },
