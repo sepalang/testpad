@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/testpad",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Interactive test cli",
   "main": "index.js",
   "bin": {
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/sepalang/testpad#readme",
   "dependencies": {
     "@sepalang/myself": "^0.3.0",
-    "@sepalang/padoc": "^0.9.4",
+    "@sepalang/padoc": "^0.10.0",
     "@sepalang/runner": "^0.8.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
