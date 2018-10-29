@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/testpad",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Interactive test cli",
   "main": "index.js",
   "bin": {
