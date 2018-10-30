@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/testpad",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Interactive test cli",
   "main": "index.js",
   "bin": {
@@ -10,7 +10,7 @@
     "test:basic": "my testpad test/run-script/src",
     "test:verbose": "my testpad test/run-script/src --verbose",
     "test:multi": "my testpad 'test/multi/one test/multi/two'",
-    "test": "npm run test:test-basic && npm run test:test-verbose && npm run test:multi"
+    "test": "npm run test:basic && npm run test:verbose && npm run test:multi"
   },
   "repository": {
     "type": "git",
