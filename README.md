@@ -20,3 +20,8 @@ testpad 'test/multi/one, test/multi/two'
 #verbose
 testpad sample/src --verbose
 ```
+
+### open coverage report in browser
+```
+testpad sample/src --open
+```

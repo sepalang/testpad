@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/testpad",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Interactive test cli",
   "main": "index.js",
   "bin": {
@@ -31,6 +31,7 @@
     "@sepalang/runner": "^0.8.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "opn": "^5.4.0"
   }
 }

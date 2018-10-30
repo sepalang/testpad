@@ -6,7 +6,8 @@ const cwd  = process.cwd()
 
 const testOptions = {
   verbose : !!argv.verbose,
-  files   : undefined
+  files   : undefined,
+  open    : false
 }
 
 if(argv._ && argv._ instanceof Array && argv._.length){
@@ -16,6 +17,10 @@ if(argv._ && argv._ instanceof Array && argv._.length){
 testOptions.files = testOptions.files.map(input=>{
   return input.indexOf("/") === 0 ? input : path.resolve(cwd, input)
 })
+
+if(!!argv.open){
+  testOptions.open = true;
+}
 
 esTest(testOptions)
 .catch(e=>{
