@@ -1,4 +1,5 @@
 /sample
+/preset/coverage
 .eslintrc.js
 .nvmrc
 .tm_properties
